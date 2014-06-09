@@ -31,3 +31,19 @@ var join = function(array, delimiter) {
 		return result;
 	}
 }
+
+var sum = function(array) {
+	if (array.length === 0) {
+		return 0;
+	}
+	else if (array.length == 1) {
+		return array[0];
+	}
+	else {
+		var result = 0;
+		for(var i = 0; i < array.length; i++) {
+			result += array[i];
+		}
+		return result;
+	}
+}
